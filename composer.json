@@ -1,5 +1,5 @@
 {
-    "name": "yanzicms/lightRail",
+    "name": "yanzicms/light-rail",
     "description": "A full-chain PHP framework.",
     "keywords": [
         "framework",
@@ -7,8 +7,8 @@
     ],
     "license": "Apache-2.0",
     "support": {
-        "issues": "https://github.com/yanzicms/lightRail/issues",
-        "source": "https://github.com/yanzicms/lightRail"
+        "issues": "https://github.com/yanzicms/light-rail/issues",
+        "source": "https://github.com/yanzicms/light-rail"
     },
     "authors": [
         {
