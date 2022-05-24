@@ -1,6 +1,6 @@
 {
     "name": "yanzicms/light-rail",
-    "description": "A full-chain PHP framework.",
+    "description": "A light and fast PHP framework.",
     "keywords": [
         "framework",
         "lightRail"
