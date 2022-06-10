@@ -113,6 +113,7 @@ class Debug
     }
     public static function dump($string)
     {
+        header("Content-type:text/html;charset=utf-8");
         echo '<pre>';
         var_dump($string);
         echo '</pre>';
