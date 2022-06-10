@@ -193,6 +193,10 @@ class Request
     {
         return $this->currentMethod;
     }
+    public function setMethodName($name)
+    {
+        $this->currentMethod = $name;
+    }
     public function controllerName()
     {
         return $this->currentController;

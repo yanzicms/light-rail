@@ -111,8 +111,15 @@ class Container
             $reflect = new ReflectionMethod($class, $method);
         }
         catch(ReflectionException $e) {
-            $class = is_object($class) ? get_class($class) : $class;
-            throw new FuncNotFoundException(Lang::get('Method not exists') . ': ' . $class . '::' . $method . '()', $e);
+            if(method_exists($class, '_empty')){
+                $reflect = new ReflectionMethod($class, '_empty');
+                $request = $this->get('request');
+                $request->setMethodName('_empty');
+            }
+            else{
+                $class = is_object($class) ? get_class($class) : $class;
+                throw new FuncNotFoundException(Lang::get('Method not exists') . ': ' . $class . '::' . $method . '()', $e);
+            }
         }
         $args = $this->bindParams($reflect, $param);
         if($accessible){
