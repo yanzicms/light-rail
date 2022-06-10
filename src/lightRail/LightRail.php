@@ -13,7 +13,7 @@ class LightRail
     public function run()
     {
         define('IS_CLI', PHP_SAPI == 'cli' ? true : false);
-        define('VERSION', '1.3.1');
+        define('VERSION', '1.3.2');
         Debug::remark('begin', 'both');
         Config::load();
         date_default_timezone_set(Config::get('timezone'));

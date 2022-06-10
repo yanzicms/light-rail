@@ -8,7 +8,7 @@
  */
 namespace lightRail\paginate;
 
-class Bootstrap
+class Bootstrap4
 {
     public function getHtml($pagingArr, $containsul)
     {
